@@ -28,7 +28,6 @@
         <label for="pali_num">Enter a set of numbers: </label>
         <input placeholder="eg. 123456.." type="text" id="pal" name="pali_num">
         <button onclick="paliDrome()">Submit</button>
-        <br><br>
         <p id="ispali"></p>
     </div>
     <br>
@@ -36,13 +35,14 @@
     <!-- Question 3 - Bill -->
     <div class="q3">
         <h2>Settling The Bill</h2>
-        <label for "bill">How much are you paying? $</label>
+        <label for "bill">How much is the bill? $</label>
         <input placeholder="Type in USD ($0.00)" type="text" id="bill" name="bill">
         <br><br>
-        <label for "perc">Percentage?</label>
-        <input type="text" id="perc" name="perc"> %
+        <label for "perc">Percentage of tip?</label>
+        <input type="text" id="perc" name="perc"> / out of 100%
         <br><br>
         <button onclick="billPay()">Submit</button>
+        <p id="total"></p>
     </div>
     <script defer src="index.js"></script>
 </body>

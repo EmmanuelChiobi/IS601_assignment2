@@ -27,5 +27,10 @@ function paliDrome() {
 }
 
 function billPay() {
-    let 
+    let subTot = Number(document.getElementById("bill").value);
+    let percNum = Number(document.getElementById("perc").value);
+    fullPerc = percNum / 100;
+    billNum = subTot * fullPerc
+    totalNum = subTot + billNum;
+    document.getElementById("total").textContent = `Total: $${totalNum.toFixed(2)}`
 }

@@ -25,17 +25,24 @@
     <!-- Question 2 - Palindrome -->
     <div class="q2">
         <h2>Palindrome Determination</h2>
-        <form onsubmit="">
-            <label for="pali_num">Enter a set of numbers: </label>
-            <input placeholder="eg. 123456.." type="text" id="pal" name="pali_num">
-            <input type="submit" id="bt2" value="Submit">
-        </form>
+        <label for="pali_num">Enter a set of numbers: </label>
+        <input placeholder="eg. 123456.." type="text" id="pal" name="pali_num">
+        <button onclick="paliDrome()">Submit</button>
+        <br><br>
+        <p id="ispali"></p>
     </div>
     <br>
 
     <!-- Question 3 - Bill -->
     <div class="q3">
         <h2>Settling The Bill</h2>
+        <label for "bill">How much are you paying? $</label>
+        <input placeholder="Type in USD ($0.00)" type="text" id="bill" name="bill">
+        <br><br>
+        <label for "perc">Percentage?</label>
+        <input type="text" id="perc" name="perc"> %
+        <br><br>
+        <button onclick="billPay()">Submit</button>
     </div>
     <script defer src="index.js"></script>
 </body>

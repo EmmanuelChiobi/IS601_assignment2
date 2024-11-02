@@ -13,6 +13,19 @@ function nameRev() {
 
 function paliDrome() {
     let val = document.getElementById("pal").value;
-    var vals = [];
-    
+    let isPali = document.getElementById('ispali');
+    var revPali = ""
+    for (var i = val.length - 1; i >= 0; i--) {
+        revPali += val[i];
+    }
+
+    if (val === revPali) {
+        isPali.textContent = "True";
+    } else {
+        isPali.textContent = "False";
+    }
+}
+
+function billPay() {
+    let 
 }
